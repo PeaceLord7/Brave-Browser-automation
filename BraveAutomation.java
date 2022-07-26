@@ -12,9 +12,11 @@ public class BraveAutomation {
 		 
 		    ChromeOptions options = new ChromeOptions();
 		    
+		    //Setting the path of brave browser
+		    
 		    options.setBinary("C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe");
 		 
-		    WebDriver driver = new ChromeDriver();
+		    WebDriver driver = new ChromeDriver(options);
 		 
 		    driver.manage().window().maximize();
 		 
